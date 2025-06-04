@@ -90,7 +90,7 @@ navegador = webdriver.Chrome(service=Service(ChromeDriverManager().install()), o
 
 def fazer_login():
     try:
-        navegador.get("https://me.sap.com/processnavigator/SolS/EARL_SolS-013/2408?region=DE")
+        navegador.get("https://me.sap.com/processnavigator/SolS/EARL_SolS-013/2408?region=BR")
         navegador.maximize_window()
 
         # Preenche o email
