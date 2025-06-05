@@ -160,14 +160,12 @@ def fazer_login():
 
 
 
-def main():
+def obter_driver_logado():
     try:
         fazer_login()
-      
+        return navegador
     except Exception as e:
-        print(f"❌ Erro no fluxo principal: {e}")
-    finally:
+        print(f"❌ Erro ao obter driver logado: {e}")
         navegador.quit()
+        return None
 
-if __name__ == "__main__":
-    main()
